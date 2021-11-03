@@ -1,3 +1,6 @@
 axon:
   axonserver:
     clientId: flights-cmd
+spring:
+  application:
+    name: flights-cmd
