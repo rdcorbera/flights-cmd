@@ -1,8 +1,8 @@
 package com.skyxairlines.services.flightcmd.api.aggregates;
 
+import com.skyxairlines.libs.flightsdomain.domain.FlightKey;
+import com.skyxairlines.libs.flightsdomain.events.FlightCreatedEvent;
 import com.skyxairlines.services.flightcmd.api.commands.CreateFlightCommand;
-import com.skyxairlines.services.flightcmd.api.events.FlightCreatedEvent;
-import com.skyxairlines.services.flightcmd.business.domain.FlightKey;
 import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;

@@ -1,7 +1,7 @@
 package com.skyxairlines.services.flightcmd.gateway.flights;
 
+import com.skyxairlines.libs.flightsdomain.domain.FlightKey;
 import com.skyxairlines.services.flightcmd.api.commands.CreateFlightCommand;
-import com.skyxairlines.services.flightcmd.business.domain.FlightKey;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

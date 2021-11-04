@@ -1,6 +1,6 @@
 package com.skyxairlines.services.flightcmd.api.commands;
 
-import com.skyxairlines.services.flightcmd.business.domain.FlightKey;
+import com.skyxairlines.libs.flightsdomain.domain.FlightKey;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.axonframework.commandhandling.RoutingKey;
