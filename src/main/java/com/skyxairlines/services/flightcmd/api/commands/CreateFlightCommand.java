@@ -9,5 +9,6 @@ import org.axonframework.commandhandling.RoutingKey;
 @AllArgsConstructor
 public class CreateFlightCommand {
   @RoutingKey
+  private String flightId;
   private FlightKey key;
 }

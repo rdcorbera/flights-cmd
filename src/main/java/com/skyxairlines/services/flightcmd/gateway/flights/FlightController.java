@@ -20,11 +20,13 @@ public class FlightController {
 
   @PostMapping()
   public ResponseEntity create(@RequestBody CreateFlightRequest request) {
-    commandGateway.send(new CreateFlightCommand(new FlightKey(
+    FlightKey key = new FlightKey(
         request.getAirlineCode(),
         request.getFlightNumber(),
         request.getOrigin(),
-        request.getDepartureDate())));
+        request.getDepartureDate());
+
+    commandGateway.send(new CreateFlightCommand(key.toString(), key));
 
     return ResponseEntity.ok().build();
   }
